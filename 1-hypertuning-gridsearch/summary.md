@@ -1,16 +1,14 @@
 # Summary week 1
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-change the number of epochs, eg to 5 or 10 -> 
+Change the number of epochs, eg to 5 or 10 -> 
 
 Default with 3 epochs it goes to max 86.2 % accuracy, durataion is 1:47
 10 epochs it's goes to 88.5% accuracy, duration is longer, like 6 minutes. 
 So it helps a little
 
+Changing the amount of units1 and units2 to values between 16 and 1024. Use factors of 2 to easily scan the ranges: 16, 32, 64, etc.
 
-changing the amount of units1 and units2 to values between 16 and 1024. Use factors of 2 to easily scan the ranges: 16, 32, 64, etc.
-
-Hoe kleiner de units, hoe slechter de prestatie, maar veel hoger dan 256 worden de prestaties ook weer minder.
+Hoe kleiner de units, hoe slechter de prestatie, maar veel hoger dan 256 worden de prestaties ook weer minder, in ieder geval niet beter
 units 4 = 75%, units 2 = 20%
 512=87% en nog redelijk snel, 
 1024 duurt lang, 86,5, duurt langer, geen winst meer
@@ -19,14 +17,12 @@ units 4 = 75%, units 2 = 20%
 
 changing the batchsize to values between 4 and 128. Again, use factors of two for convenience.
 
-
 batch size 4 = 86,7%, 10 minuten
 batch size 32 =  86,9%, 4 minuten
 batch size 64 = 86,2 = 2 minuten (standaard)
 batch size 128 = 87,5% en 1,5 minuut
 
 hogere batch size lijkt iets beter, lager niet goed
-
 
 
 change the depth of your model by adding a additional linear layer + activation function
@@ -38,9 +34,11 @@ standaard:
 Extra laag: 
 2 minuut, 86,6%
 
+Extra laag niet perse voordelig, mogelijk spelen met unit grootte, nu niet gedaan.
+
 changing the learningrate to values between 1e-2 and 1e-5
 
-Kwam ik niet uit
+nu zit learning rate scheduler er al in, ik zie (nog) niet waar ik dat kan aanpassen
 
 changing the optimizer from SGD to one of the other available algoritms at torch (scroll down for the algorithms)
 
@@ -53,6 +51,17 @@ what is an upside of using factors of 2 for hypertuning? What is a downside?
 Upside: More training, better results, but cost a lot of extra compute. 
 
 
-Find the [notebook](./notebook.ipynb) and the [instructions](./instructions.md)
+# 2. Reflect
+Doing a master means you don't just start engineering a pipeline, but you need to reflect. Why do you see the results you see? What does this mean, considering the theory? Write down lessons learned and reflections, based on experimental results. This is the `science` part of `data science`.
 
-[Go back to Homepage](../README.md)
+You follow this cycle:
+- make a hypothesis
+Epoch's gaan omhoog, dan accuracy ook.
+- design an experiment
+Aanpassen aantal epoc's
+- run the experiment
+
+- analyze the results and draw conclusions
+epochs = 3, default, then 86%. When epochs increase to 10 then goes to 88,5, maar tijd gaat ook omhoog.
+Er zit ergens een sweet spot, maar je kan je afvragen, is de extra tijds/performance investering waard voor 1% betere accuracy
+- repeat
