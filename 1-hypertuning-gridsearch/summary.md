@@ -63,6 +63,9 @@ Aanpassen aantal epoc's
 
 # 3. Report:
 
+![Hypertuning Resultaat](https://github.com/kj1github/portfolio-example/blob/main/1-hypertuning-gridsearch/2025-09-17%2021_30_49-Map2%20-%20Excel.png?raw=true)
+
+
 Hypothesis
 
 Ik verwachtte dat meer epochs en grotere netwerken (meer units) zouden zorgen voor hogere accuracy. 
