@@ -61,6 +61,65 @@ Epoch's gaan omhoog, dan accuracy ook.
 Aanpassen aantal epoc's
 - run the experiment
 
+# 3. Report:
+
+Hypothesis
+
+Ik verwachtte dat meer epochs en grotere netwerken (meer units) zouden zorgen voor hogere accuracy. 
+
+Experiments & Results
+Epochs
+
+3 epochs: 86,2% accuracy (1:47 min)
+
+10 epochs: 88,5% accuracy (± 6 min)
+→ Meer epochs helpt iets, maar kost veel extra tijd.
+
+Units (units1 & units2)
+
+units = 4: 75%
+
+units = 2: 20%
+
+units = 512: 87%
+
+units = 1024: 86,5% (traag)
+→ Minder units is slecht, maar boven de 512 geen winst meer.
+
+Batchsize
+
+4: 86,7% (10 min)
+
+32: 86,9% (4 min)
+
+64 (default): 86,2% (2 min)
+
+128: 87,5% (1,5 min)
+→ Grotere batchsize werkt sneller en iets beter.
+
+Extra Layer (dieper netwerk)
+
+Standaard: 87%, 1,5 min
+
+Met extra laag: 86,6%, 2 min
+→ Geen duidelijke verbetering.
+
+Learning rate / Optimizer
+
+Niet getest vanwege tijd en setup-beperkingen.
+
+Conclusie:
+
+Meer trainen (epochs) werkt, maar de winst is beperkt vs. de tijd.
+
+Middelgrote netwerken (256–512 units) presteren het beste. Groter wordt traag zonder extra winst.
+
+Batchsize omhoog maakt training sneller en soms zelfs iets beter.
+
+Extra lagen toevoegen werkt niet zomaar. Je moet dan waarschijnlijk ook andere parameters finetunen.
+
+Combinaties van instellingen testen is belangrijk om een goede balans te vinden.
+
 - analyze the results and draw conclusions
 epochs = 3, default, then 86%. When epochs increase to 10 then goes to 88,5, maar tijd gaat ook omhoog.
 Er zit ergens een sweet spot, maar je kan je afvragen, is de extra tijds/performance investering waard voor 1% betere accuracy
