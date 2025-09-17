@@ -116,6 +116,8 @@ Middelgrote netwerken (256–512 units) presteren het beste. Groter wordt traag 
 
 Batchsize omhoog maakt training sneller en soms zelfs iets beter.
 
+
+
 Extra lagen toevoegen werkt niet zomaar. Je moet dan waarschijnlijk ook andere parameters finetunen.
 
 Combinaties van instellingen testen is belangrijk om een goede balans te vinden.
