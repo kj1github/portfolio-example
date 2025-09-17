@@ -120,7 +120,4 @@ Extra lagen toevoegen werkt niet zomaar. Je moet dan waarschijnlijk ook andere p
 
 Combinaties van instellingen testen is belangrijk om een goede balans te vinden.
 
-- analyze the results and draw conclusions
-epochs = 3, default, then 86%. When epochs increase to 10 then goes to 88,5, maar tijd gaat ook omhoog.
-Er zit ergens een sweet spot, maar je kan je afvragen, is de extra tijds/performance investering waard voor 1% betere accuracy
-- repeat
+
