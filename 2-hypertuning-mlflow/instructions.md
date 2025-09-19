@@ -12,6 +12,36 @@ Experiment with adding dropout and normalization layers to your model. Some roug
 - Dropout: after Linear or Conv2d layers. Often added after the last Linear layer *before* the output layer, but could occur more often.
 - Normalization layers: right after (blocks of) Linear or Conv2d layers, but before activation functions.
 
+Default is 5:46, 87,8%
+100%|██████████| 937/937 [01:47<00:00,  8.70it/s]
+2025-09-18 15:35:05.641 | INFO     | mltrainer.trainer:report:209 - Epoch 0 train 0.7262 test 0.5461 metric ['0.7929']
+100%|██████████| 937/937 [01:47<00:00,  8.71it/s]
+2025-09-18 15:37:00.550 | INFO     | mltrainer.trainer:report:209 - Epoch 1 train 0.4305 test 0.4013 metric ['0.8554']
+100%|██████████| 937/937 [01:48<00:00,  8.62it/s]
+2025-09-18 15:38:56.626 | INFO     | mltrainer.trainer:report:209 - Epoch 2 train 0.3435 test 0.3324 metric ['0.8781']
+100%|██████████| 3/3 [05:46<00:00, 115.56s/it]
+
+  Add dropout in de dense layers. I expect it to run faster with same accuray 
+
+          self.dense = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(filters, units1),
+            nn.ReLU(),
+            nn.Dropout(p=0.5),        # toevoeging KJ
+            nn.Linear(units1, units2),
+            nn.ReLU(),
+            nn.Dropout(p=0.5),        #toevoeging kj
+            nn.Linear(units2, 10)
+
+  dropout added = time trainer.loop() = 5:47 and 0.8411% is max
+  100%|██████████| 937/937 [01:46<00:00,  8.77it/s]
+2025-09-18 15:25:15.489 | INFO     | mltrainer.trainer:report:209 - Epoch 0 train 1.0034 test 0.5529 metric ['0.7874']
+100%|██████████| 937/937 [01:47<00:00,  8.73it/s]
+2025-09-18 15:27:11.975 | INFO     | mltrainer.trainer:report:209 - Epoch 1 train 0.5704 test 0.4409 metric ['0.8391']
+100%|██████████| 937/937 [01:47<00:00,  8.75it/s]
+2025-09-18 15:29:07.174 | INFO     | mltrainer.trainer:report:209 - Epoch 2 train 0.4733 test 0.4218 metric ['0.8411']
+100%|██████████| 3/3 [05:47<00:00, 115.96s/it]
+
 # 3. Use logging
 - set up logging with MLflow, and make sure the hyperparameters you are using are logged.
 - get comfortable with using MLflow to visualize your results, it has a pretty powerful dashboard.
