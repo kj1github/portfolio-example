@@ -7,13 +7,21 @@
 - hidden size = 4 = 6,5%
 - hidden size = 16 = 21,5%
 - hidden size = 32 = 34%
-- hidden size = 64 = 47,5 = default)
+- hidden size = 64 = 47,5 = default, (10 seconds)
 - hidden size = 128 = 76,5%
 - hidden size = 256 = 92,8 % duurt halve minuut
 - hidden size = 512 = 95,7& (duurt 1 minuut)
-- hidden size = 2048 = 
-- 
+- hidden size = 2048 = 99% (12 minutes), that's pretty high?
+
+hidden size = 64, layers = 1 = 50% (8 seconds)
+hidden size = 64, layers = 3 = 67% (30 seconds)
+hidden siez = 64, layers = 6 = 60% (24 seconds)
+
+hidden size = 128 and layers = 3 = 92% = 40 seconds)
+
 - test different things. What works? What does not?
+Adding hidden size seems to help very well, layers 3 = good, more is not better
+
 - experiment with either GRU or LSTM layers, create your own models. Have a look at `mltrainer.rnn_models` for inspiration.
 - experiment with adding Conv1D layers. Think about the necessary input-output dimensions of your tensors before and after each layer.
 
