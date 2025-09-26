@@ -13,7 +13,7 @@ Door omstandigheden (server bij SURF niet beschikbaar) heb ik slechts beperkt ku
 - Model met dropout (p=0.5 na twee dense lagen): na 3 epochs een accuracy van ~84,1%.  
 - Trainingstijden bleven ongeveer gelijk (~5:47 minuten).
 
-Ik heb ook kort gekeken naar MLflow-logging: runs worden geregistreerd, inclusief accuracy en verlies, maar ik heb dit nog niet volledig benut om systematisch hyperparameters te vergelijken. Convolutielagen en normalization layers zijn in dit experiment nog niet verder uitgewerkt.
+Ik heb ook kort gekeken naar MLflow-logging: runs worden geregistreerd, inclusief accuracy en verlies, dit kost wel veel tijd om vertrouwd mee te worden. Daarom schrijf ik het ook nog vaak apart op (configuratie en accuracy)
 
 ## Analyse
 - Dropout gaf in deze configuratie **geen verbetering**, de accuracy was zelfs iets lager. Mogelijk is de dataset groot genoeg en het model klein genoeg dat overfitting nog geen groot probleem vormt.  
@@ -25,4 +25,4 @@ Door de technische beperkingen heb ik slechts een deel van de opdracht kunnen ui
 - Het belangrijk is om **één variabele tegelijk te testen**, zodat resultaten duidelijk te interpreteren zijn.  
 
 ## Conclusie
-Hoewel de scope van de experimenten beperkt bleef, leverden de tests met dropout nuttige inzichten op: het gebruik ervan moet onderbouwd zijn door een duidelijke hypothese (bijvoorbeeld als er signalen van overfitting zijn). Voor de volgende ronde wil ik de experimenten uitbreiden met **batch normalization**, **convolutielagen** en meer uitgebreide MLflow-logging, zodat de interacties tussen hyperparameters beter zichtbaar worden.
+Ivm server probleem maar beperkt kunnen werken aan deze opdracht.
