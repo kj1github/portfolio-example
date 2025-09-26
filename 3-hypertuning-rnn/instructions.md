@@ -1,6 +1,18 @@
 # Excercises
 
 - try to improve the RNN model
+- default accuracy = 0,0625 (ik dacht 62,5%, maar is maar 6,2%. 20 klasses = gokkans van 5%, dus iets beter nu als een standaard gok.
+
+- hidden size 1 = 3,5%
+- hidden size = 4 = 6,5%
+- hidden size = 16 = 21,5%
+- hidden size = 32 = 34%
+- hidden size = 64 = 47,5 = default)
+- hidden size = 128 = 76,5%
+- hidden size = 256 = 92,8 % duurt halve minuut
+- hidden size = 512 = 95,7& (duurt 1 minuut)
+- hidden size = 2048 = 
+- 
 - test different things. What works? What does not?
 - experiment with either GRU or LSTM layers, create your own models. Have a look at `mltrainer.rnn_models` for inspiration.
 - experiment with adding Conv1D layers. Think about the necessary input-output dimensions of your tensors before and after each layer.
