@@ -23,6 +23,17 @@ hidden size = 128 and layers = 3 = 92% = 40 seconds)
 Adding hidden size seems to help very well, layers 3 = good, more is not better
 
 - experiment with either GRU or LSTM layers, create your own models. Have a look at `mltrainer.rnn_models` for inspiration.
+
+ Default is GRU = 51%
+ LSTM = 46%
+
+ LSTM en 128 hidden size en num layers = 1  = 54%
+
+ 3 layers en 128 hidden size GRU = 51% tot 91%
+ 3 layers en 128 hidden size LSTM = 52%
+
+Maakt niet heel veel uit zo op eerste gezicht, paar itteraties verder dan is GRU toch wel beter dan LSTM met zelfde settings
+ 
 - experiment with adding Conv1D layers. Think about the necessary input-output dimensions of your tensors before and after each layer.
 
 You should be able to get above 90% accuracy with the dataset.
