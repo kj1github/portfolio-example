@@ -1,4 +1,4 @@
-# Verslag experimenten met RNN-modellen voor gesture recognition (gegenereerd op basis van instructinos.md met behulp van AI tool, alles is zelf getest en uitgewerkt.
+# Verslag experimenten met RNN-modellen voor gesture recognition 
 
 ## Doel  
 Het doel van dit experiment was het verbeteren van de prestaties van een  RNN-model voor classificatie van de **Gestures**. We hebben systematisch gevarieerd met hyperparameters (hidden size, aantal lagen), RNN-types (GRU vs. LSTM) en toevoeging van convolutielagen.
