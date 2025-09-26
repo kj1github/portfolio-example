@@ -35,6 +35,11 @@ Adding hidden size seems to help very well, layers 3 = good, more is not better
 Maakt niet heel veel uit zo op eerste gezicht, paar itteraties verder dan is GRU toch wel beter dan LSTM met zelfde settings
  
 - experiment with adding Conv1D layers. Think about the necessary input-output dimensions of your tensors before and after each layer.
+Input moet worden omgezet. Nu is het 32,31,3 waarbij 32 = batch, 31 is aantal timesteps en 3 is aantal 'kanalen'. 
+Dit moet worden omgezet naar Convolution, dus batch, aantal kanalen, lengte. Dus 32,3,31.
+
+De conv1d levert soortgelijke prestaties op.
+
 
 You should be able to get above 90% accuracy with the dataset.
 Create a report of 1 a4 about your experiments.
