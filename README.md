@@ -1,4 +1,4 @@
-# Welcome to My Data Science Portfolio
+# Welcome to Data Science Portfolio van Klaas-Jan
 
 This portfolio contains a summary of my work, including machine learning exercises, a hackathon project, and critical reflections.
 
