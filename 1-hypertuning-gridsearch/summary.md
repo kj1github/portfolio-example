@@ -38,6 +38,10 @@ Ik verwachtte dat **meer epochs** en **grotere netwerken (meer units)** zouden l
 ### Learning rate / Optimizer
 - Niet getest wegens tijd en setup-beperkingen.  
 
+
+
+![Hypertuning Resultaat](https://github.com/kj1github/portfolio-example/blob/main/1-hypertuning-gridsearch/2025-09-17%2021_30_49-Map2%20-%20Excel.png?raw=true)
+
 ---
 
 ## Reflectie
