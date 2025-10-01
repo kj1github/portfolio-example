@@ -5,6 +5,8 @@ You could pick the flowers, or the ants/bees from notebook [03_minimal_transfer_
 
 Keep in mind that your hardware will limit what you can do with the images; so you will either need to settle for smaller images, or preprocess them into a smaller size, or use google colab if the VM is too slow or limited in memory.
 
+Ik heb het 03 notebook transfer learning als basis gepakt, die transfer learning toepast. Het model scoort een accuray van ca 90%.
+
 ## Create a model
 We have worked with a few types of layers:
 - linear
@@ -15,10 +17,20 @@ We have worked with a few types of layers:
 and we have also seen architectures build with these layers like resnet (skip-layers), squeeze-excite and googlenet (inception). If you dont know how to implement these, ask claude.ai or gemini for help, they do an excellent job at explaining these architectures.
 It's up to you to create a configurable model now that can be hypertuned.
 
+Ik heb een eenvoudig convolution model gecreeërd met 4 lagen, 2 confolution lagen en 2 fully connected, op basis van de kleine dataset met bijen en mieren, zonder de transfer learning, die heb ik eruit gehaald. 
+
+*Standaard settings van model:*
+Architectuur: 2 conv-lagen + 2 FC-lagen
+Filters: 32 en 64
+Hidden units: 128
+Learning rate: 0.001
+Optimizer: SGD + momentum
+
 ## Goal
 
 Show you can
 1. Make a hypothesis based on the theory (use the book)
+   Ik verwacht dat hyperparameters aanpasssen een aanzienlijk verschil maakt in de accuracy van het model.
 1. Design experiments to test your hypothesis
 1. Work iterative: eg start with a small experiment to get a direction, then reduce the search space and run a more extensive experiment
 
