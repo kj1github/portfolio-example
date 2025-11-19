@@ -1,7 +1,9 @@
-# Ethical Reflection: The Cuddlefish Dilemma
+# Ethical Reflection: 
 
-While "Project Cuddlefish" was a technical success, it forces us to ask a critical question: is it ethical to use artificial intelligence to enhance a creature's natural abilities?
+Here are the 2 portfolios i made:
 
-By providing cuttlefish with "perfect" camouflage, we might disrupt the local predator-prey dynamics. Does our intervention give the cuttlefish an unfair advantage, potentially leading to an ecological imbalance? This project, though whimsical, serves as a microcosm for the broader debate on AI-driven biological enhancement.
+[Portfolio 1]([https://link-url-here.org](https://github.com/kj1github/portfolio-example/blob/main/7-ethics/portfolio_1_ethics_kjkisteman.pdf))
+
+[Portfolio 2]([https://link-url-here.org](https://github.com/kj1github/portfolio-example/blob/main/7-ethics/portfolio_2_ethics_kjkisteman%20(1).pdf))
 
 [Go back to Homepage](../README.md)
