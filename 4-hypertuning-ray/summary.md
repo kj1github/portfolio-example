@@ -2,14 +2,16 @@
 Hypertuning fashion
 
 1. Introduction
-In de hypertuner lessen hebben we stilgestaan bij hypertunen. In het voorbeeld werden er 2 parameters gehypertuned (hidden size en num layers) op de gestures database
-Dit notebook is aangepast naar de fashion dataset, waar we met een CNN model de 10 klasses proberen te voorspellen. Hierbij hebbnen we 2 paramaters die we hypertunen, te weten de learning rate en het aantal filters.
-In verband met de performance van de omgeving zijn de parameters beperkt qua grootte.
+   In de hypertuner lessen hebben we stilgestaan bij hypertunen. In het voorbeeld werden er 2 parameters gehypertuned (hidden size en num layers) op de gestures database
+   Dit notebook is aangepast naar de fashion dataset, waar we met een CNN model de 10 klasses proberen te voorspellen. Hierbij hebbnen we 2 paramaters die we hypertunen, te weten de
+   learning rate en het aantal filters.
+   In verband met de performance van de surf omgeving zijn de parameters beperkt qua grootte.
 
-2. Hypothese
-   Een hoger aantal filters leid tot een hogere accuracy,
+3. Hypothese
+   Ik heb een eenvoudige hypothese neergezet:
+   Een hoger aantal filters leid tot een hogere accuracy, maar ook een langere trainingstijd
 
-3. Experiment
+4. Experiment
 **Random search** 
    Er zijn met een 4-tal hypertuners (random search, bayes, hyperband en hyperopt) een 10-tal epochs gedraaid.
    De configuratie voor alle hypertuners is gelijk:
@@ -123,11 +125,14 @@ In verband met de performance van de omgeving zijn de parameters beperkt qua gro
 
 4. Analyse/reflectie
 De hypertune modellen presteren uiteindelijk allemaal ongeveer hetzelfde qua accuracy. Dat suggereert dat alle methodend redelijk dezelfde combinaties hebben gevonden.
-Hyperopt doet het dan het beste. De trainingstijd: Bayes en random duren het langst, hyperband en hyperopt zijn sneller.
+Hyperopt doet het dan het beste. De trainingstijd: Bayes en random duren het langst, hyperband en hyperopt zijn sneller. Dit is gezien de theorie ook logisch, oa hyperband stopt op tijd als hij een slechte configuratie heeft.
 
 Hypothese controle:
  Een hoger aantal filters leid tot een hogere accuracy, maar gaat gepaard met een significate langere trainingstijd.
- Dit klopt, hogere filter leveren een hogere accuracy op dan de lage. Dit zie je in alle methoden terugkomen.
+ Dit klopt, hogere filter leveren een hogere accuracy op dan de lage. Dit zien we in alle methoden terugkomen. Maar we zien ook dat de tijd toeneemt, hoe hoger het aantl filters, hoe langer de trainigstijd. 
+
+ 5. Reflectie
+Dit kopje nog even toegevoegd voor mezelf. Het koste me veel tijd om uberhaubt een werkende omgeving te hebben. Heb meerdere itereaties gedaan, eerst vanaf scratch begonnen met een dataset, maar daar kwam ik niet uit met hypertunen. Daarna een bestaand notebook gepakt en daar de ants en bees dataset op getraind. Ook daar liep ik vast op de hypertune onderdelen. Tot slot een bestaande hypertune opdracht aangepast naar een andere dataset en daar 2 andere parameters voor gepakt. Het viel tegen hoelang het model wel niet draaide, dus dat koste ook nog veel werk. Uiteindelijk wel een werkende oplossing, maar kost me toch heel veel tijd om iets werkends te krijgen (ligt er ook aan dat ik niet dagelijks met python / hypertunen/modellen werk). Geen excuses, maar leek me goed om dit kopje toe te voegen.
 
 
 
