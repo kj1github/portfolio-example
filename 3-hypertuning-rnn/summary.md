@@ -1,55 +1,55 @@
-# Verslag experimenten met RNN-modellen voor gesture recognition 
+# Report on Experiments with RNN Models for Gesture Recognition
 
-## Doel  
-Het doel van dit experiment was het verbeteren van de prestaties van een  RNN-model voor classificatie van de Gestures. We hebben systematisch gevarieerd met hyperparameters (hidden size, aantal lagen), RNN-types (GRU vs. LSTM) en toevoeging van convolutielagen.
-
----
-
-## Startpunt  
-Het basismodel (GRU, hidden size = 64, 1 laag) haalde een initiële accuracy van ca. 48%. Dit ligt boven toevalsniveau (5%, bij 20 klassen)..
+## Objective  
+The goal of this experiment was to improve the performance of an RNN model for classifying gestures. We systematically varied hyperparameters (hidden size, number of layers), RNN types (GRU vs. LSTM), and the addition of convolutional layers.
 
 ---
 
-## Variatie in hidden size  
-- Kleine hidden sizes (1–16) presteerden slecht (3–21%).  
-- 64 units gaf ~48% (default, training in enkele seconden).  
-- 128 units gaf een forse sprong naar ~76%.  
-- 256–512 units bereikten >90% (tot ~96%), maar met langere trainingstijden (30–60 seconden).  
-- 2048 units bereikte bijna 99%, maar training duurde ~12 minuten.  
-
-**Conclusie:** vergroten van hidden size levert de grootste winst op, maar met sterk stijgende rekentijd.
+## Starting Point  
+The baseline model (GRU, hidden size = 64, 1 layer) achieved an initial accuracy of about 48%. This is above chance level (5%, given 20 classes).
 
 ---
 
-## Variatie in aantal lagen  
-- 1 laag (64 units): ~50%.  
-- 3 lagen (64 units): ~67% (30 sec).  
-- 6 lagen (64 units): geen verdere verbetering (~60%).  
-- 128 hidden size, 3 lagen: ~92% in 40 sec.  
+## Variation in Hidden Size  
+- Small hidden sizes (1–16) performed poorly (3–21%).  
+- 64 units achieved ~48% (default, training in a few seconds).  
+- 128 units produced a significant jump to ~76%.  
+- 256–512 units reached >90% (up to ~96%) but required longer training times (30–60 seconds).  
+- 2048 units achieved nearly 99%, but training took ~12 minutes.  
 
-**Conclusie:** meer lagen tot ca. 3 helpt, maar méér lagen levert geen extra winst en kost extra tijd.
+**Conclusion:** Increasing the hidden size provides the largest improvement, but with a steep increase in computation time.
+
+---
+
+## Variation in Number of Layers  
+- 1 layer (64 units): ~50%.  
+- 3 layers (64 units): ~67% (30 sec).  
+- 6 layers (64 units): no further improvement (~60%).  
+- 128 hidden size, 3 layers: ~92% in 40 sec.  
+
+**Conclusion:** Adding layers up to about 3 helps, but more layers provide no additional benefit and increase training time.
 
 ---
 
 ## GRU versus LSTM  
 - Default GRU: ~51%.  
 - Default LSTM: ~46%.  
-- Met 128 hidden size, 1 laag: LSTM ~54%, GRU ~76%.  
-- Met 3 lagen, 128 hidden size: GRU ~91%, LSTM ~52%.  
+- With 128 hidden size, 1 layer: LSTM ~54%, GRU ~76%.  
+- With 3 layers, 128 hidden size: GRU ~91%, LSTM ~52%.  
 
-**Conclusie:** in deze dataset presteert GRU duidelijk beter dan LSTM bij vergelijkbare instellingen.
-
----
-
-## Conv1D-lagen  
-- Input `(batch, tijd, features)` moest worden omgezet naar `(batch, features, tijd)` om met `nn.Conv1d` te werken (bv. 32×3×31).  
-- Convolutie werd correct toegepast en leverde prestaties vergelijkbaar met RNN’s.  
-- Conv1D kan nuttig zijn om lokale patronen te leren, maar gaf in dit experiment geen grote winst boven de sterkere RNN-instellingen.
+**Conclusion:** On this dataset, GRUs clearly outperform LSTMs under comparable settings.
 
 ---
 
-## Eindconclusie  
-- De grootste prestatieverbetering kwam door opschalen van hidden size en het gebruik van 3 lagen GRU.  
-- GRU’s zijn robuuster en efficiënter dan LSTM’s in dit scenario.  
-- Conv1D-lagen werken technisch correct maar gaven geen doorslaggevende verbetering.  
-- Met de juiste hyperparameters zijn accuracies van >90% haalbaar, en zelfs ~99% met zeer grote modellen (maar dit is minder efficiënt).
+## Conv1D Layers  
+- Input `(batch, time, features)` had to be transformed to `(batch, features, time)` to work with `nn.Conv1d` (e.g., 32×3×31).  
+- Convolution was applied correctly and produced performance comparable to RNNs.  
+- Conv1D can be useful for learning local patterns but did not outperform stronger RNN configurations in this experiment.
+
+---
+
+## Final Conclusion  
+- The greatest performance gain came from increasing the hidden size and using 3-layer GRUs.  
+- GRUs are more robust and efficient than LSTMs in this scenario.  
+- Conv1D layers worked correctly but did not yield a decisive improvement.  
+- With proper hyperparameters, accuracies above 90% are achievable, and even ~99% with very large models (though less efficient).
