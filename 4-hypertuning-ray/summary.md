@@ -106,7 +106,7 @@ The configuration was the same for all hypertuners:
 ### Hyperopt
 (see table above)
 
-<img width="458" height="413" alt="plot_times" src="https://github.com/user-attachments/assets/dfa56dcf-e7fe-44be-8038-c8c1c63a9faf" />
+
 
 | Trial name         | Status      | Loc                   | Epochs | Filters | LR          | Tune dir              | Units1 | Units2 | Iter | Total time (s) | Valid loss | Train loss | Accuracy |
 |---------------------|-------------|-----------------------|--------|----------|--------------|-----------------------|--------|--------|------|----------------|-------------|-------------|-----------|
@@ -129,6 +129,16 @@ The configuration was the same for all hypertuners:
 | tune_model_3bb6886a | TERMINATED  | 192.168.3.171:221991 | 10 | 14 | 0.001470440 | /home/kkisteman_54e0 | 128 | 64 | 10 | 189.239 | 0.363981 | 0.314077 | 0.872796 |
 | tune_model_bfbf3411 | TERMINATED  | 192.168.3.171:223483 | 10 | 14 | 0.000739361 | /home/kkisteman_54e0 | 128 | 64 | 10 | 190.226 | 0.371764 | 0.346046 | 0.863582 |
 
+**End results:**
+
+<img width="458" height="413" alt="plot_times" src="https://github.com/user-attachments/assets/dfa56dcf-e7fe-44be-8038-c8c1c63a9faf" />
+
+| Methode     | Epochs | Tune dir                                                    | Filters | Units1 | Units2 | LR       | Accuracy |
+|--------------|---------|------------------------------------------------------------|----------|--------|--------|-----------|-----------|
+| random       | 10      | /home/kkisteman/MADS-MachineLearning-course/no...         | 12.000000 | 128    | 64     | 0.001229  | 0.881010  |
+| bayes        | 10      | /home/kkisteman/MADS-MachineLearning-course/no...         | 12.247915 | 128    | 64     | 0.001836  | 0.871294  |
+| hyperband    | 10      | /home/kkisteman/MADS-MachineLearning-course/no...         | 14.000000 | 128    | 64     | 0.002596  | 0.875601  |
+| hyperopt     | 10      | /home/kkisteman/MADS-MachineLearning-course/no...         | 15.000000 | 128    | 64     | 0.001909  | 0.884615  |
 
 ---
 
