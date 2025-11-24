@@ -1,28 +1,28 @@
-# Verslag experimenten met dropout, normalisatie en extra lagen
+# Report on Experiments with Dropout, Normalization, and Additional Layers
 
-## Doelstelling
-Deze week stond in het teken van het uitbreiden van eerdere experimenten met meer hyperparameters en architectuurcomponenten. Volgens de opdracht zouden dropout, normalisatielagen, convolutionele/poolinglagen en logging met MLflow toegevoegd moeten worden. Daarnaast lag de nadruk op het wetenschappelijke proces: hypothese formuleren, experiment opzetten, uitvoeren en reflecteren.
+## Objective
+This week focused on expanding previous experiments with more hyperparameters and architectural components. According to the assignment, dropout, normalization layers, convolutional/pooling layers, and logging with MLflow were to be added. In addition, the emphasis was on the scientific process: formulating a hypothesis, setting up an experiment, executing it, and reflecting on the results.
 
-## Hypothese
-Mijn verwachting was dat **dropout** overfitting zou verminderen en de generalisatie zou verbeteren zonder dat de trainingstijd significant zou toenemen. Ook dacht ik dat **normalisatie** (bijv. batchnorm) zou zorgen voor stabielere training en snellere convergentie. Verder verwachtte ik dat **convolutielagen** patronen efficiënter zouden leren dan enkel dense lagen.
+## Hypothesis
+My expectation was that dropout would reduce overfitting and improve generalization without significantly increasing training time. I also expected that normalization (e.g., batch normalization) would lead to more stable training and faster convergence. Furthermore, I anticipated that convolutional layers would learn patterns more efficiently than dense layers alone.
 
-## Experimenten
-Door omstandigheden (server bij SURF niet beschikbaar) heb ik slechts beperkt kunnen experimenteren. Ik heb vooral gekeken naar het effect van **dropout in de dense lagen**.
+## Experiments
+Due to circumstances (SURF server unavailable), I was only able to perform limited experiments. I mainly focused on the effect of dropout in the dense layers
 
-- Model zonder dropout (baseline): na 3 epochs een accuracy van ~87,8%.  
-- Model met dropout (p=0.5 na twee dense lagen): na 3 epochs een accuracy van ~84,1%.  
-- Trainingstijden bleven ongeveer gelijk (~5:47 minuten).
+- Model without dropout (baseline): after 3 epochs, accuracy of ~87.8%.  
+- Model with dropout (p=0.5 after two dense layers): after 3 epochs, accuracy of ~84.1%.  
+- Training times remained approximately the same (~5:47 minutes).
 
-Ik heb ook kort gekeken naar MLflow-logging: runs worden geregistreerd, inclusief accuracy en verlies, dit kost wel veel tijd om vertrouwd mee te worden. Daarom schrijf ik het ook nog vaak apart op (configuratie en accuracy)
+I also briefly explored MLflow logging: runs are recorded, including accuracy and loss, though it takes time to become familiar with it. Therefore, I still record configurations and accuracy manually as well.
 
-## Analyse
-- Dropout gaf in deze configuratie **geen verbetering**, de accuracy was zelfs iets lager. Mogelijk is de dataset groot genoeg en het model klein genoeg dat overfitting nog geen groot probleem vormt.  
-- De **trainingsduur veranderde nauwelijks** door het toevoegen van dropout, in tegenstelling tot mijn verwachting dat het sneller zou gaan.  
-- Dit benadrukt dat de keuze van hyperparameters altijd dataset- en modelafhankelijk is. Dropout is geen garantie voor winst, zeker niet bij relatief eenvoudige modellen.  
+## Analysis
+- Dropout did not ** performance in this configuration; accuracy was slightly lower. Possibly, the dataset is large enough and the model small enough that overfitting is not yet a major issue.  
+- Training duration hardly changed with the addition of dropout, contrary to my expectation that it might speed up.  
+- This highlights that the choice of hyperparameters is always dataset- and model-dependent. Dropout is not a guaranteed improvement, especially for relatively simple models.  
 
-## Reflectie
-Door de technische beperkingen heb ik slechts een deel van de opdracht kunnen uitvoeren. Toch heb ik geleerd dat:
-- Het belangrijk is om **één variabele tegelijk te testen**, zodat resultaten duidelijk te interpreteren zijn.  
+## Reflection
+Due to technical limitations, I was only able to complete part of the assignment. Nevertheless, I learned that:
+- It is important to test one variable at a time so results can be interpreted clearly.  
 
-## Conclusie
-Ivm server probleem maar beperkt kunnen werken aan deze opdracht.
+## Conclusion
+Due to the server issue, I was only able to work on this assignment to a limited extent.
