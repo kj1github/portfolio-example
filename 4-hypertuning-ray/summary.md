@@ -18,7 +18,8 @@ In verband met de performance van de omgeving zijn de parameters beperkt qua gro
    * units2": 64,
    * lr": tune.loguniform(1e-4, 3e-3)
 
-   Hieronder de random search. 
+   Hieronder de random search.
+   
 | Trial name              | Status      | Loc                  | Filters | LR          | Iter | Total time (s) | Valid loss | Train loss | Accuracy |
 |--------------------------|-------------|----------------------|----------|--------------|------|----------------|-------------|-------------|-----------|
 | tune_model_79a39_00000  | TERMINATED  | 192.168.3.171:62204 | 4        | 0.000309012  | 10   | 107.409        | 0.727666    | 0.731288    | 0.720453  |
