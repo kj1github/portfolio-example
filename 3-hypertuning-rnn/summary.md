@@ -42,7 +42,7 @@ The baseline model (GRU, hidden size = 64, 1 layer) achieved an initial accuracy
 ---
 
 ## Conv1D Layers  
-- Input `(batch, time, features)` had to be transformed to `(batch, features, time)` to work with `nn.Conv1d` (e.g., 32×3×31).  
+- Input (batch, time, features) had to be transformed to (batch, features, time) to work with nn.Conv1d (e.g., 32×3×31).  
 - Convolution was applied correctly and produced performance comparable to RNNs.  
 - Conv1D can be useful for learning local patterns but did not outperform stronger RNN configurations in this experiment.
 
