@@ -1,34 +1,35 @@
-# Welcome to Data Science Portfolio van Klaas-Jan
+# Welcome to the Data Science Portfolio of Klaas-Jan
 
-This portfolio contains a summary of my work, including machine learning exercises, a hackathon project, and critical reflections.
+This portfolio showcases my work in machine learning, model optimization, deployment, and ethical reflection.  
+Each section summarizes a key learning week or project and illustrates my progress throughout the course.
 
-This website is built automatically using GitHub Pages. The main page you're reading right now is generated from the `README.md` file.
+> This site is automatically generated with GitHub Pages. The page you are reading is built from the `README.md` file.
+
+---
 
 ## Table of Contents
 
-1.  **[Hyperparameter gridsearch](./1-hypertuning-gridsearch/summary.md)**
-    * Summary of the first week
-1.  **[Hyperparameter mlflow](./2-hypertuning-mlflow/summary.md)**
-    * Summary of the second week
-1.  **[Hyperparameter rnn](./3-hypertuning-rnn/summary.md)**
-    * Summary of the third week
-1.  **[Hyperparameter ray](./4-hypertuning-ray/summary.md)**
-    * A summary of my findings from tuning a Random Forest Classifier.
-1.  **[deployment](./5-deployment/summary.md)**
-    * The result of my own deployment
-1.  **[Hackathon Model: Project Cuddlefish](./6-hackathon/project_cuddlefish.md)**
-    * Our award-winning model that predicts the optimal camouflage pattern for a cuttlefish based on its environment.
-1.  **[Ethical Reflection](./7-ethics/summary.md)**
-    * A critical analysis of the ethical implications of AI-driven camouflage.
+### Week 1 – [Hyperparameter Grid Search](./1-hypertuning-gridsearch/summary.md)
+A summary of the first week, focusing on systematic hyperparameter exploration using grid search.
 
+### Week 2 – [Hyperparameter MLflow](./2-hypertuning-mlflow/summary.md)
+An overview of experiments tracked and analyzed using MLflow.
 
-## How to setup your own portfolio
-- fork this repo
-- go to the **settings** tab on top of your github page
-- first, enable issues by scrolling down, and under "features" check the "issues" checkbox. 
-- Then, on the left-hand menu click on the **Pages** tab
-- under build and deployment, select `deploy from a branch`
-- select main/root and save
+### Week 3 – [Hyperparameter RNN](./3-hypertuning-rnn/summary.md)
+Exploration of recurrent neural networks (GRU vs. LSTM) and their tuning process.
 
-After a few minutes you will see the site is published.
+### Week 4 – [Hyperparameter Ray](./4-hypertuning-ray/summary.md)
+Findings from advanced hypertuning with Ray Tune — comparing Random, Bayes, HyperBand, and HyperOpt.
 
+### Week 5 – [Deployment](./5-deployment/summary.md)
+Demonstration of a deployed machine learning model, accessible via an interactive interface.
+
+### [Hackathon Model: Project Cuddlefish](./6-hackathon/project_cuddlefish.md)
+Our award-winning model that predicts the optimal camouflage pattern for a cuttlefish based on its environment.
+
+### [Ethical Reflection](./7-ethics/summary.md)
+A critical exploration of the ethical implications of AI-driven camouflage and model accountability.
+
+---
+
+Each section includes results, visualizations, and personal reflections to illustrate both the technical and analytical growth achieved during the course.
