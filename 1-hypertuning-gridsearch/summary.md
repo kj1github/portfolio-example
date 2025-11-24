@@ -36,9 +36,10 @@ I expected that more epochs and larger networks (more units) would lead to highe
 → No clear improvement; extra depth probably requires simultaneous tuning of other parameters.
 
 ### Learning rate / Optimizer
-- Not tested due to time and setup limitations.  
+- Not tested due to time and setup limitations.
+- 
 
-![Hypertuning Result](/mnt/data/4642c8ad-8f24-476c-85a8-a2b153d9e036.png)
+![Hypertuning Resultaat](https://github.com/kj1github/portfolio-example/blob/main/1-hypertuning-gridsearch/2025-09-17%2021_30_49-Map2%20-%20Excel.png?raw=true)
 
 ---
 
