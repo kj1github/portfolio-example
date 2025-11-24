@@ -8,7 +8,6 @@ It's availale on my surf machine at: 145.38.185.156
 
 
 
-The url is [Dialect generator Staphorst](https://link-url-here.org)
 
 [Go back to Homepage](../README.md)
 
