@@ -113,8 +113,16 @@ In verband met de performance van de omgeving zijn de parameters beperkt qua gro
 
 <img width="458" height="413" alt="plot_times" src="https://github.com/user-attachments/assets/dfa56dcf-e7fe-44be-8038-c8c1c63a9faf" />
 
+| Methode     | Epochs | Tune dir                                                    | Filters | Units1 | Units2 | LR       | Accuracy |
+|--------------|---------|------------------------------------------------------------|----------|--------|--------|-----------|-----------|
+| random       | 10      | /home/kkisteman/MADS-MachineLearning-course/no...         | 12.000000 | 128    | 64     | 0.001229  | 0.881010  |
+| bayes        | 10      | /home/kkisteman/MADS-MachineLearning-course/no...         | 12.247915 | 128    | 64     | 0.001836  | 0.871294  |
+| hyperband    | 10      | /home/kkisteman/MADS-MachineLearning-course/no...         | 14.000000 | 128    | 64     | 0.002596  | 0.875601  |
+| hyperopt     | 10      | /home/kkisteman/MADS-MachineLearning-course/no...         | 15.000000 | 128    | 64     | 0.001909  | 0.884615  |
 
-6. Analyse/reflectie
-Here are the [instructions](./instructions.md) and here is a script to start [hypertune.py](./hypertune.py)
+
+4. Analyse/reflectie
+
+
 
 [Go back to Homepage](../README.md)
