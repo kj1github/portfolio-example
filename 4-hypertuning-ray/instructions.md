@@ -5,7 +5,7 @@ You could pick the flowers, or the ants/bees from notebook [03_minimal_transfer_
 
 Keep in mind that your hardware will limit what you can do with the images; so you will either need to settle for smaller images, or preprocess them into a smaller size, or use google colab if the VM is too slow or limited in memory.
 
-Ik heb het 03 notebook transfer learning als basis gepakt, die transfer learning toepast. Het model scoort een accuray van ca 90%.
+Ik heb de fashion dataset gebruikt.
 
 ## Create a model
 We have worked with a few types of layers:
@@ -17,21 +17,19 @@ We have worked with a few types of layers:
 and we have also seen architectures build with these layers like resnet (skip-layers), squeeze-excite and googlenet (inception). If you dont know how to implement these, ask claude.ai or gemini for help, they do an excellent job at explaining these architectures.
 It's up to you to create a configurable model now that can be hypertuned.
 
-Ik heb een eenvoudig convolution model gecreeërd met 4 lagen, 2 confolution lagen en 2 fully connected, op basis van de kleine dataset met bijen en mieren, zonder de transfer learning, die heb ik eruit gehaald. 
+Ik heb een GRU model gebruikt waarbij de learning rate en het aantal filters de hyperparamaters zijn. Dit op basis van het 01hypertuner notebook.
 
-*Standaard settings van model:*
-Architectuur: 2 conv-lagen + 2 FC-lagen
-Filters: 32 en 64
-Hidden units: 128
-Learning rate: 0.001
-Optimizer: SGD + momentum
 
 ## Goal
 
+
+
 Show you can
 1. Make a hypothesis based on the theory (use the book)
-   Ik verwacht dat hyperparameters aanpasssen een aanzienlijk verschil maakt in de accuracy van het model.
+   Ik verwacht dat een hoger aantal filters een betere accury geeft, maar dat ze wel meer tijd kosten.
+   
 1. Design experiments to test your hypothesis
+   01 hypertuner notebook gebruikt als basis, daar 2 parameters configureerbaar gemaakt, de learning rate en het aantal filters
 1. Work iterative: eg start with a small experiment to get a direction, then reduce the search space and run a more extensive experiment
 
 Some hyperparameters to consider, ranging from high to low importance:
@@ -50,9 +48,13 @@ You CAN use hyperband in the process (eg if you want to speed up scans of big hy
 ### Scientific method
 The science part of data science is about setting up experiments. You follow this cycle:
 - make a hypothesis
+- Ik verwacht dat een hoger aantal filters een betere accury geeft, maar dat ze wel meer tijd kosten.
 - design an experiment
+- aantal filters en learning rate als parameters. Filters  tussen 2 en 16) en learning rate (1e-4, 3e-3) 
 - run the experiment
+- Gedaan, filters eerst groter gezet, maar dan komt de surf omgeving er bijna niet doorheen. Ik verwacht wel dat als ik de filters nog hoger zet, de accuracy nog verder omhoog gaat.
 - analyze the results and draw conclusions
+- 
 - repeat
 
 To keep track of this process, it is useful to keep a journal. While you could use anything to do so, a nice command line tool is [jrnl](https://jrnl.sh/en/stable/). This gives you the advantage of staying in the terminal, just type down your ideas during the process, and you can always look back at what you have done.
