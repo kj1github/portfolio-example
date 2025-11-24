@@ -111,6 +111,9 @@ In verband met de performance van de omgeving zijn de parameters beperkt qua gro
 | tune_model_bfbf3411 | TERMINATED  | 192.168.3.171:223483 | 10 | 14 | 0.000739361 | /home/kkisteman_54e0 | 128 | 64 | 10 | 190.226 | 0.371764 | 0.346046 | 0.863582 |
 
 
+<img width="458" height="413" alt="plot_times" src="https://github.com/user-attachments/assets/dfa56dcf-e7fe-44be-8038-c8c1c63a9faf" />
+
+
 6. Analyse/reflectie
 Here are the [instructions](./instructions.md) and here is a script to start [hypertune.py](./hypertune.py)
 
