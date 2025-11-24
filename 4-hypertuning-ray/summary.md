@@ -7,7 +7,7 @@ Dit notebook is aangepast naar de fashion dataset, waar we met een CNN model de 
 In verband met de performance van de omgeving zijn de parameters beperkt qua grootte.
 
 2. Hypothese
-   Een hoger aantal filters leid tot een hogere accuracy, maar gaat gepaard met een significate langere trainingstijd
+   Een hoger aantal filters leid tot een hogere accuracy,
 
 3. Experiment
 **Random search** 
@@ -122,6 +122,13 @@ In verband met de performance van de omgeving zijn de parameters beperkt qua gro
 
 
 4. Analyse/reflectie
+De hypertune modellen presteren uiteindelijk allemaal ongeveer hetzelfde qua accuracy. Dat suggereert dat alle methodend redelijk dezelfde combinaties hebben gevonden.
+Hyperopt doet het dan het beste. De trainingstijd: Bayes en random duren het langst, hyperband en hyperopt zijn sneller.
+
+Hypothese controle:
+ Een hoger aantal filters leid tot een hogere accuracy, maar gaat gepaard met een significate langere trainingstijd.
+ Dit klopt, hogere filter leveren een hogere accuracy op dan de lage. Dit zie je in alle methoden terugkomen.
+
 
 
 
