@@ -18,7 +18,7 @@ This website is built automatically using GitHub Pages. The main page you're rea
     * The result of my own deployment
 1.  **[Hackathon Model: Project Cuddlefish](./6-hackathon/project_cuddlefish.md)**
     * Our award-winning model that predicts the optimal camouflage pattern for a cuttlefish based on its environment.
-1.  **[Ethical Reflection: The Cuddlefish Dilemma](./7-ethics/summary.md)**
+1.  **[Ethical Reflection](./7-ethics/summary.md)**
     * A critical analysis of the ethical implications of AI-driven camouflage.
 
 
