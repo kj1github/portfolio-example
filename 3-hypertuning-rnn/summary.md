@@ -1,12 +1,12 @@
 # Verslag experimenten met RNN-modellen voor gesture recognition 
 
 ## Doel  
-Het doel van dit experiment was het verbeteren van de prestaties van een  RNN-model voor classificatie van de **Gestures**. We hebben systematisch gevarieerd met hyperparameters (hidden size, aantal lagen), RNN-types (GRU vs. LSTM) en toevoeging van convolutielagen.
+Het doel van dit experiment was het verbeteren van de prestaties van een  RNN-model voor classificatie van de Gestures. We hebben systematisch gevarieerd met hyperparameters (hidden size, aantal lagen), RNN-types (GRU vs. LSTM) en toevoeging van convolutielagen.
 
 ---
 
 ## Startpunt  
-Het **basismodel** (GRU, hidden size = 64, 1 laag) haalde een initiële accuracy van ca. **48%**. Dit ligt boven toevalsniveau (5%, bij 20 klassen)..
+Het basismodel (GRU, hidden size = 64, 1 laag) haalde een initiële accuracy van ca. 48%. Dit ligt boven toevalsniveau (5%, bij 20 klassen)..
 
 ---
 
@@ -15,7 +15,7 @@ Het **basismodel** (GRU, hidden size = 64, 1 laag) haalde een initiële accuracy
 - 64 units gaf ~48% (default, training in enkele seconden).  
 - 128 units gaf een forse sprong naar ~76%.  
 - 256–512 units bereikten >90% (tot ~96%), maar met langere trainingstijden (30–60 seconden).  
-- 2048 units bereikte bijna **99%**, maar training duurde ~12 minuten.  
+- 2048 units bereikte bijna 99%, maar training duurde ~12 minuten.  
 
 **Conclusie:** vergroten van hidden size levert de grootste winst op, maar met sterk stijgende rekentijd.
 
@@ -37,7 +37,7 @@ Het **basismodel** (GRU, hidden size = 64, 1 laag) haalde een initiële accuracy
 - Met 128 hidden size, 1 laag: LSTM ~54%, GRU ~76%.  
 - Met 3 lagen, 128 hidden size: GRU ~91%, LSTM ~52%.  
 
-**Conclusie:** in deze dataset presteert **GRU duidelijk beter dan LSTM** bij vergelijkbare instellingen.
+**Conclusie:** in deze dataset presteert GRU duidelijk beter dan LSTM bij vergelijkbare instellingen.
 
 ---
 
@@ -49,7 +49,7 @@ Het **basismodel** (GRU, hidden size = 64, 1 laag) haalde een initiële accuracy
 ---
 
 ## Eindconclusie  
-- De grootste prestatieverbetering kwam door **opschalen van hidden size** en het gebruik van **3 lagen GRU**.  
-- **GRU’s zijn robuuster en efficiënter** dan LSTM’s in dit scenario.  
-- **Conv1D-lagen** werken technisch correct maar gaven geen doorslaggevende verbetering.  
-- Met de juiste hyperparameters zijn accuracies van **>90%** haalbaar, en zelfs ~99% met zeer grote modellen (maar dit is minder efficiënt).
+- De grootste prestatieverbetering kwam door opschalen van hidden size en het gebruik van 3 lagen GRU.  
+- GRU’s zijn robuuster en efficiënter dan LSTM’s in dit scenario.  
+- Conv1D-lagen werken technisch correct maar gaven geen doorslaggevende verbetering.  
+- Met de juiste hyperparameters zijn accuracies van >90% haalbaar, en zelfs ~99% met zeer grote modellen (maar dit is minder efficiënt).
