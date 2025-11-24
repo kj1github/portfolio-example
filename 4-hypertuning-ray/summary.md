@@ -142,7 +142,27 @@ The configuration was the same for all hypertuners:
 
 ---
 
+
 ## 4. Analysis / Reflection
 All hypertuning methods achieved roughly similar accuracies. This suggests that the different methods found similar hyperparameter combinations.  
 Among them, **Hyperopt** performed best.  
-In terms of training time, **Bayes** and **Random Search** took the longest, while **Hype**
+In terms of training time, **Bayes** and **Random Search** took the longest, while **Hyperband** and **Hyperopt** were faster — which makes sense, since Hyperband stops early when a poor configuration is detected.
+
+### Hypothesis Check
+> A higher number of filters leads to higher accuracy but also to longer training times.
+
+This hypothesis is confirmed.  
+Higher filter counts resulted in higher accuracy across all methods, but also in noticeably longer training times. The correlation between filters and computation time is clearly visible.
+
+---
+
+## 5. Reflection
+I added this section for personal reflection. It took a lot of time just to get a working environment.  
+I went through several iterations — first building a dataset from scratch, but I couldn’t get hypertuning to work properly. Then I tried using an existing notebook and trained it on the ants and bees dataset, but ran into tuning issues again.  
+Finally, I adapted an existing hypertuning assignment to a different dataset and tuned two parameters.  
+The model runs took quite long, which required patience and experimentation.  
+
+In the end, I managed to get a working solution, but it took much longer than expected (partly because I don’t work with Python/hypertuning/models on a daily basis).  
+Not an excuse — but I thought it was good to include this reflection.
+
+---
