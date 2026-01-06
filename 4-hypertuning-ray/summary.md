@@ -16,7 +16,7 @@ A higher number of filters leads to higher accuracy but also to longer training 
 ---
 
 ## 3. Experiment
-Experiments were conducted using four hypertuning methods (**random search**, **bayes**, **hyperband**, and **hyperopt**) for 10 epochs each.  
+Experiments were conducted using four hypertuning methods (**random search**, **bayes**, **hyperband**, and **hyperopt**) for 10 epochs each.  See the 4-hypertuning_notebook.ipynb for the details.
 The configuration was the same for all hypertuners:
 - `"filters": tune.randint(2,16)`
 - `"units1": 128`
