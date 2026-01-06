@@ -56,3 +56,6 @@ I expected that more epochs and larger networks (more units) would lead to highe
 - There is always a trade-off between model size, training time, and accuracy.  
 - For this experiment, 256–512 units, larger batch sizes, and a limited number of epochs provide the best balance.  
 - Combinations of hyperparameters should be further explored to find an optimal model.
+
+## Note
+- Due a error on the surf enviromenmt on september 19th my VM was deleted. So only the report is here, not the notebook itself.
