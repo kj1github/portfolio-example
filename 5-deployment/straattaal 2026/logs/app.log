@@ -1,0 +1,3 @@
+2025-11-24 11:14:28.666 | INFO     | __main__:load_model:25 - Loading model and tokenizer from /home/kkisteman/MADS-deployment/2-frontend/straattaal/artefacts
+2025-11-24 11:14:28.674 | SUCCESS  | __main__:load_model:33 - Model and tokenizer loaded successfully
+2025-11-24 11:14:31.785 | INFO     | __main__:read_index:139 - serving index.html

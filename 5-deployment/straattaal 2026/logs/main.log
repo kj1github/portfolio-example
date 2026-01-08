@@ -1,0 +1,213 @@
+2025-11-19 13:34:30,500 | main - INFO - File assets/straattaal.txt not found. donwloading from https://www.mijnwoordenboek.nl/dialect/Kerkraads
+2025-11-19 13:34:30,501 | main - INFO - Getting data from https://www.mijnwoordenboek.nl/dialect/Kerkraads
+2025-11-19 13:34:30,891 | main - INFO - Processing 1783 street language words
+2025-11-19 13:34:30,894 | main - INFO - Saving processed words to assets/straattaal.txt
+2025-11-19 13:34:30,896 | main - INFO - Loaded 1867 words
+2025-11-19 13:34:57,974 | main - INFO - Epoch [10/800], Loss: 42.9830
+2025-11-19 13:34:57,974 | main - INFO - Current learning rate: 0.1
+2025-11-19 13:35:23,395 | main - INFO - Epoch [20/800], Loss: 40.4510
+2025-11-19 13:36:34,402 | main - INFO - Loading processed words from assets/straattaal.txt
+2025-11-19 13:36:34,402 | main - INFO - Loaded 1867 words
+2025-11-19 13:36:58,609 | main - INFO - Epoch [10/800], Loss: 44.9797
+2025-11-19 13:36:58,609 | main - INFO - Current learning rate: 0.1
+2025-11-19 13:37:23,850 | main - INFO - Epoch [20/800], Loss: 40.9646
+2025-11-19 13:37:45,990 | main - INFO - Epoch [30/800], Loss: 39.3898
+2025-11-19 13:38:10,745 | main - INFO - Epoch [40/800], Loss: 38.2188
+2025-11-19 13:38:33,247 | main - INFO - Epoch [50/800], Loss: 37.4071
+2025-11-19 13:38:55,645 | main - INFO - Epoch [60/800], Loss: 36.7874
+2025-11-19 13:39:20,743 | main - INFO - Epoch [70/800], Loss: 36.2864
+2025-11-19 13:39:42,786 | main - INFO - Epoch [80/800], Loss: 35.9391
+2025-11-19 13:40:05,058 | main - INFO - Epoch [90/800], Loss: 35.6965
+2025-11-19 13:40:29,946 | main - INFO - Epoch [100/800], Loss: 35.4320
+2025-11-19 13:40:52,023 | main - INFO - Epoch [110/800], Loss: 35.2221
+2025-11-19 13:41:17,339 | main - INFO - Epoch [120/800], Loss: 35.0024
+2025-11-19 13:41:39,833 | main - INFO - Epoch [130/800], Loss: 34.8956
+2025-11-19 13:42:04,676 | main - INFO - Epoch [140/800], Loss: 34.7200
+2025-11-19 13:42:26,526 | main - INFO - Epoch [150/800], Loss: 34.5601
+2025-11-19 13:42:47,917 | main - INFO - Epoch [160/800], Loss: 34.4196
+2025-11-19 13:43:11,759 | main - INFO - Epoch [170/800], Loss: 34.4824
+2025-11-19 13:43:33,571 | main - INFO - Epoch [180/800], Loss: 34.3572
+2025-11-19 13:43:54,899 | main - INFO - Epoch [190/800], Loss: 34.1593
+2025-11-19 13:44:19,294 | main - INFO - Epoch [200/800], Loss: 34.0729
+2025-11-19 13:44:41,020 | main - INFO - Epoch [210/800], Loss: 33.9594
+2025-11-19 13:45:02,776 | main - INFO - Epoch [220/800], Loss: 33.8945
+2025-11-19 13:45:27,272 | main - INFO - Epoch [230/800], Loss: 33.7952
+2025-11-19 13:45:48,602 | main - INFO - Epoch [240/800], Loss: 34.1952
+2025-11-19 13:46:12,692 | main - INFO - Epoch [250/800], Loss: 34.0359
+2025-11-19 13:46:33,993 | main - INFO - Epoch [260/800], Loss: 33.8380
+2025-11-19 13:46:55,010 | main - INFO - Epoch [270/800], Loss: 33.6158
+2025-11-19 13:47:19,140 | main - INFO - Epoch [280/800], Loss: 33.5051
+2025-11-19 13:47:40,598 | main - INFO - Epoch [290/800], Loss: 33.4064
+2025-11-19 13:48:01,600 | main - INFO - Epoch [300/800], Loss: 33.3675
+2025-11-19 13:48:25,741 | main - INFO - Epoch [310/800], Loss: 33.3966
+2025-11-19 13:48:46,925 | main - INFO - Epoch [320/800], Loss: 33.3336
+2025-11-19 13:49:08,344 | main - INFO - Epoch [330/800], Loss: 33.3622
+2025-11-19 13:49:32,351 | main - INFO - Epoch [340/800], Loss: 33.2081
+2025-11-19 13:49:53,426 | main - INFO - Epoch [350/800], Loss: 33.1805
+2025-11-19 13:50:17,741 | main - INFO - Epoch [360/800], Loss: 33.1533
+2025-11-19 13:50:39,142 | main - INFO - Epoch [370/800], Loss: 33.1689
+2025-11-19 13:51:00,539 | main - INFO - Epoch [380/800], Loss: 33.3043
+2025-11-19 13:51:25,290 | main - INFO - Epoch [390/800], Loss: 33.1453
+2025-11-19 13:51:47,030 | main - INFO - Epoch [400/800], Loss: 33.0790
+2025-11-19 13:52:11,221 | main - INFO - Epoch [410/800], Loss: 33.0592
+2025-11-19 13:52:32,675 | main - INFO - Epoch [420/800], Loss: 33.1709
+2025-11-19 13:52:53,859 | main - INFO - Epoch [430/800], Loss: 33.0794
+2025-11-19 13:53:17,788 | main - INFO - Epoch [440/800], Loss: 33.0223
+2025-11-19 13:53:39,315 | main - INFO - Epoch [450/800], Loss: 32.9920
+2025-11-19 13:54:00,922 | main - INFO - Epoch [460/800], Loss: 32.9860
+2025-11-19 13:54:24,883 | main - INFO - Epoch [470/800], Loss: 33.1906
+2025-11-19 13:54:46,269 | main - INFO - Epoch [480/800], Loss: 33.0396
+2025-11-19 13:55:10,234 | main - INFO - Epoch [490/800], Loss: 33.0007
+2025-11-19 13:55:31,550 | main - INFO - Epoch [500/800], Loss: 32.9514
+2025-11-19 13:55:53,075 | main - INFO - Epoch [510/800], Loss: 32.9044
+2025-11-19 13:56:17,357 | main - INFO - Epoch [520/800], Loss: 32.8788
+2025-11-19 13:56:38,893 | main - INFO - Epoch [530/800], Loss: 32.9002
+2025-11-19 13:57:00,254 | main - INFO - Epoch [540/800], Loss: 32.9845
+2025-11-19 13:57:24,275 | main - INFO - Epoch [550/800], Loss: 32.8577
+2025-11-19 13:57:45,305 | main - INFO - Epoch [560/800], Loss: 32.8297
+2025-11-19 13:58:09,398 | main - INFO - Epoch [570/800], Loss: 32.9313
+2025-11-19 13:58:31,039 | main - INFO - Epoch [580/800], Loss: 32.8655
+2025-11-19 13:58:52,409 | main - INFO - Epoch [590/800], Loss: 32.8422
+2025-11-19 13:59:16,891 | main - INFO - Epoch [600/800], Loss: 32.7740
+2025-11-19 13:59:38,462 | main - INFO - Epoch [610/800], Loss: 32.8905
+2025-11-19 13:59:59,674 | main - INFO - Epoch [620/800], Loss: 32.7784
+2025-11-19 14:00:24,075 | main - INFO - Epoch [630/800], Loss: 32.8930
+2025-11-19 14:00:45,448 | main - INFO - Epoch [640/800], Loss: 32.9949
+2025-11-19 14:01:08,002 | main - INFO - Epoch [650/800], Loss: 32.7593
+2025-11-19 14:01:08,002 | main - INFO - Current learning rate: 0.010000000000000002
+2025-11-19 14:01:31,007 | main - INFO - Epoch [660/800], Loss: 32.6971
+2025-11-19 14:01:52,383 | main - INFO - Epoch [670/800], Loss: 32.6805
+2025-11-19 14:02:16,556 | main - INFO - Epoch [680/800], Loss: 32.6307
+2025-11-19 14:02:38,086 | main - INFO - Epoch [690/800], Loss: 32.6202
+2025-11-19 14:02:59,501 | main - INFO - Epoch [700/800], Loss: 32.6074
+2025-11-19 14:03:23,624 | main - INFO - Epoch [710/800], Loss: 32.5964
+2025-11-19 14:03:44,937 | main - INFO - Epoch [720/800], Loss: 32.5906
+2025-11-19 14:04:07,685 | main - INFO - Epoch [730/800], Loss: 32.5978
+2025-11-19 14:04:30,128 | main - INFO - Epoch [740/800], Loss: 32.6159
+2025-11-19 14:04:51,316 | main - INFO - Epoch [750/800], Loss: 32.6706
+2025-11-19 14:05:15,586 | main - INFO - Epoch [760/800], Loss: 32.5842
+2025-11-19 14:05:37,023 | main - INFO - Epoch [770/800], Loss: 32.5867
+2025-11-19 14:05:57,838 | main - INFO - Epoch [780/800], Loss: 32.5759
+2025-11-19 14:06:21,863 | main - INFO - Epoch [790/800], Loss: 32.5834
+2025-11-19 14:06:42,856 | main - INFO - Epoch [800/800], Loss: 32.5808
+2025-11-19 14:06:42,901 | main - INFO - Model and tokenizer saved to artefacts
+2025-11-19 14:06:42,903 | main - INFO - Training history saved to artefacts/history.txt
+2026-01-08 14:47:54,798 | main - INFO - Loading processed words from assets/straattaal.txt
+2026-01-08 14:47:54,799 | main - INFO - Loaded 1867 words
+2026-01-08 14:48:22,932 | main - INFO - Epoch [10/800], Loss: 41.6238
+2026-01-08 14:48:22,933 | main - INFO - Current learning rate: 0.1
+2026-01-08 14:48:44,840 | main - INFO - Epoch [20/800], Loss: 38.3913
+2026-01-08 14:49:09,270 | main - INFO - Epoch [30/800], Loss: 36.6716
+2026-01-08 14:49:30,920 | main - INFO - Epoch [40/800], Loss: 35.7385
+2026-01-08 14:49:52,861 | main - INFO - Epoch [50/800], Loss: 35.1808
+2026-01-08 14:50:17,447 | main - INFO - Epoch [60/800], Loss: 34.7513
+2026-01-08 14:50:39,594 | main - INFO - Epoch [70/800], Loss: 34.3883
+2026-01-08 14:51:01,851 | main - INFO - Epoch [80/800], Loss: 34.1592
+2026-01-08 14:51:26,533 | main - INFO - Epoch [90/800], Loss: 33.9149
+2026-01-08 14:51:48,717 | main - INFO - Epoch [100/800], Loss: 33.7406
+2026-01-08 14:52:13,424 | main - INFO - Epoch [110/800], Loss: 33.6451
+2026-01-08 14:52:35,717 | main - INFO - Epoch [120/800], Loss: 33.4649
+2026-01-08 14:52:57,434 | main - INFO - Epoch [130/800], Loss: 33.1926
+2026-01-08 14:53:22,117 | main - INFO - Epoch [140/800], Loss: 33.0328
+2026-01-08 14:53:44,124 | main - INFO - Epoch [150/800], Loss: 32.9740
+2026-01-08 14:54:08,970 | main - INFO - Epoch [160/800], Loss: 32.7789
+2026-01-08 14:54:30,898 | main - INFO - Epoch [170/800], Loss: 33.3677
+2026-01-08 14:54:52,991 | main - INFO - Epoch [180/800], Loss: 32.8144
+2026-01-08 14:55:17,786 | main - INFO - Epoch [190/800], Loss: 32.5716
+2026-01-08 14:55:39,533 | main - INFO - Epoch [200/800], Loss: 32.4077
+2026-01-08 14:56:01,592 | main - INFO - Epoch [210/800], Loss: 32.3291
+2026-01-08 14:56:25,560 | main - INFO - Epoch [220/800], Loss: 32.3295
+2026-01-08 14:56:47,438 | main - INFO - Epoch [230/800], Loss: 32.4573
+2026-01-08 14:57:11,926 | main - INFO - Epoch [240/800], Loss: 32.3207
+2026-01-08 14:57:33,825 | main - INFO - Epoch [250/800], Loss: 32.2475
+2026-01-08 14:57:55,473 | main - INFO - Epoch [260/800], Loss: 32.0828
+2026-01-08 14:58:19,922 | main - INFO - Epoch [270/800], Loss: 32.0057
+2026-01-08 14:58:41,816 | main - INFO - Epoch [280/800], Loss: 32.0855
+2026-01-08 14:59:03,697 | main - INFO - Epoch [290/800], Loss: 31.9350
+2026-01-08 14:59:28,210 | main - INFO - Epoch [300/800], Loss: 32.0416
+2026-01-08 14:59:50,249 | main - INFO - Epoch [310/800], Loss: 31.9752
+2026-01-08 15:00:15,198 | main - INFO - Epoch [320/800], Loss: 31.9240
+2026-01-08 15:00:37,161 | main - INFO - Epoch [330/800], Loss: 31.9310
+2026-01-08 15:00:59,062 | main - INFO - Epoch [340/800], Loss: 31.8175
+2026-01-08 15:01:23,601 | main - INFO - Epoch [350/800], Loss: 31.6863
+2026-01-08 15:01:45,914 | main - INFO - Epoch [360/800], Loss: 31.7686
+2026-01-08 15:02:10,583 | main - INFO - Epoch [370/800], Loss: 31.8268
+2026-01-08 15:02:32,634 | main - INFO - Epoch [380/800], Loss: 31.6044
+2026-01-08 15:02:53,862 | main - INFO - Epoch [390/800], Loss: 31.5470
+2026-01-08 15:03:18,537 | main - INFO - Epoch [400/800], Loss: 31.5438
+2026-01-08 15:03:40,488 | main - INFO - Epoch [410/800], Loss: 31.5150
+2026-01-08 15:04:02,288 | main - INFO - Epoch [420/800], Loss: 31.5814
+2026-01-08 15:04:26,898 | main - INFO - Epoch [430/800], Loss: 31.4445
+2026-01-08 15:04:48,163 | main - INFO - Epoch [440/800], Loss: 31.5518
+2026-01-08 15:05:12,843 | main - INFO - Epoch [450/800], Loss: 31.5226
+2026-01-08 15:05:35,053 | main - INFO - Epoch [460/800], Loss: 31.5210
+2026-01-08 15:05:57,224 | main - INFO - Epoch [470/800], Loss: 31.5298
+2026-01-08 15:06:22,084 | main - INFO - Epoch [480/800], Loss: 31.4610
+2026-01-08 15:06:44,171 | main - INFO - Epoch [490/800], Loss: 31.3356
+2026-01-08 15:07:08,605 | main - INFO - Epoch [500/800], Loss: 31.4614
+2026-01-08 15:07:30,422 | main - INFO - Epoch [510/800], Loss: 31.4204
+2026-01-08 15:07:52,118 | main - INFO - Epoch [520/800], Loss: 31.4076
+2026-01-08 15:08:17,131 | main - INFO - Epoch [530/800], Loss: 31.3139
+2026-01-08 15:08:38,429 | main - INFO - Epoch [540/800], Loss: 31.2237
+2026-01-08 15:09:00,319 | main - INFO - Epoch [550/800], Loss: 31.2977
+2026-01-08 15:09:25,092 | main - INFO - Epoch [560/800], Loss: 31.3596
+2026-01-08 15:09:47,046 | main - INFO - Epoch [570/800], Loss: 31.1930
+2026-01-08 15:10:11,625 | main - INFO - Epoch [580/800], Loss: 31.1373
+2026-01-08 15:10:33,639 | main - INFO - Epoch [590/800], Loss: 31.0381
+2026-01-08 15:10:55,496 | main - INFO - Epoch [600/800], Loss: 31.1273
+2026-01-08 15:11:20,316 | main - INFO - Epoch [610/800], Loss: 31.2139
+2026-01-08 15:11:42,248 | main - INFO - Epoch [620/800], Loss: 31.1600
+2026-01-08 15:12:04,513 | main - INFO - Epoch [630/800], Loss: 31.0887
+2026-01-08 15:12:28,924 | main - INFO - Epoch [640/800], Loss: 31.0550
+2026-01-08 15:12:28,925 | main - INFO - Current learning rate: 0.010000000000000002
+2026-01-08 15:12:50,636 | main - INFO - Epoch [650/800], Loss: 30.8099
+2026-01-08 15:13:15,229 | main - INFO - Epoch [660/800], Loss: 30.7754
+2026-01-08 15:13:36,888 | main - INFO - Epoch [670/800], Loss: 30.7533
+2026-01-08 15:13:58,511 | main - INFO - Epoch [680/800], Loss: 30.7144
+2026-01-08 15:14:22,907 | main - INFO - Epoch [690/800], Loss: 30.7173
+2026-01-08 15:14:44,887 | main - INFO - Epoch [700/800], Loss: 30.7005
+2026-01-08 15:15:09,794 | main - INFO - Epoch [710/800], Loss: 30.6881
+2026-01-08 15:15:31,302 | main - INFO - Epoch [720/800], Loss: 30.6265
+2026-01-08 15:15:53,186 | main - INFO - Epoch [730/800], Loss: 30.6848
+2026-01-08 15:16:17,815 | main - INFO - Epoch [740/800], Loss: 30.5670
+2026-01-08 15:16:40,045 | main - INFO - Epoch [750/800], Loss: 30.5964
+2026-01-08 15:17:01,870 | main - INFO - Epoch [760/800], Loss: 30.5781
+2026-01-08 15:17:26,083 | main - INFO - Epoch [770/800], Loss: 30.5410
+2026-01-08 15:17:47,864 | main - INFO - Epoch [780/800], Loss: 30.5222
+2026-01-08 15:18:12,646 | main - INFO - Epoch [790/800], Loss: 30.5578
+2026-01-08 15:18:34,172 | main - INFO - Epoch [800/800], Loss: 30.5368
+2026-01-08 15:18:34,213 | main - INFO - Model and tokenizer saved to artefacts
+2026-01-08 15:18:34,216 | main - INFO - Training history saved to artefacts/history.txt
+2026-01-08 15:20:36,092 | main - INFO - Loading processed words from assets/straattaal.txt
+2026-01-08 15:20:36,093 | main - INFO - Loaded 1867 words
+2026-01-08 15:20:58,637 | main - INFO - Epoch [10/800], Loss: 41.8599
+2026-01-08 15:20:58,638 | main - INFO - Current learning rate: 0.1
+2026-01-08 15:22:58,647 | main - INFO - Loading processed words from assets/straattaal.txt
+2026-01-08 15:22:58,648 | main - INFO - Loaded 1867 words
+2026-01-08 15:23:24,051 | main - INFO - Epoch [10/800], Loss: 43.3141
+2026-01-08 15:23:24,052 | main - INFO - Current learning rate: 0.1
+2026-01-08 15:23:46,201 | main - INFO - Epoch [20/800], Loss: 40.9514
+2026-01-08 15:24:04,782 | main - INFO - Loading processed words from assets/straattaal.txt
+2026-01-08 15:24:04,782 | main - INFO - Loaded 1867 words
+2026-01-08 15:24:27,634 | main - INFO - Epoch [10/10], Loss: 42.8413
+2026-01-08 15:24:27,635 | main - INFO - Current learning rate: 0.1
+2026-01-08 15:24:27,674 | main - INFO - Model and tokenizer saved to artefacts
+2026-01-08 15:24:27,675 | main - INFO - Training history saved to artefacts/history.txt
+2026-01-08 15:25:21,231 | main - INFO - Loading processed words from assets/straattaal.txt
+2026-01-08 15:25:21,232 | main - INFO - Loaded 1867 words
+2026-01-08 15:25:44,163 | main - INFO - Epoch [10/10], Loss: 42.4549
+2026-01-08 15:25:44,163 | main - INFO - Current learning rate: 0.1
+2026-01-08 15:25:44,205 | main - INFO - Model and tokenizer saved to artefacts
+2026-01-08 15:25:44,205 | main - INFO - Training history saved to artefacts/history.txt
+2026-01-08 15:29:31,624 | main - INFO - Loading processed words from assets/straattaal.txt
+2026-01-08 15:29:31,624 | main - INFO - Loaded 1867 words
+2026-01-08 15:29:54,383 | main - INFO - Epoch [10/10], Loss: 41.3992
+2026-01-08 15:29:54,384 | main - INFO - Current learning rate: 0.1
+2026-01-08 15:29:54,423 | main - INFO - Model and tokenizer saved to artefacts
+2026-01-08 15:29:54,424 | main - INFO - Training history saved to artefacts/history.txt
+2026-01-08 15:31:54,310 | main - INFO - Loading processed words from assets/straattaal.txt
+2026-01-08 15:31:54,311 | main - INFO - Loaded 1867 words
+2026-01-08 15:32:19,380 | main - INFO - Epoch [10/10], Loss: 41.8425
+2026-01-08 15:32:19,380 | main - INFO - Current learning rate: 0.1
+2026-01-08 15:32:19,419 | main - INFO - Model and tokenizer saved to artefacts
+2026-01-08 15:32:19,420 | main - INFO - Training history saved to artefacts/history.txt

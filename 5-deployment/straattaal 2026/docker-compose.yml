@@ -1,0 +1,11 @@
+services:
+  slanggen:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: slanggen-app:latest
+    ports:
+      - "80:8000"
+    restart: always  # Zorgt voor automatische herstart op SURF
+    volumes:
+      - ./artefacts:/app/artefacts  # Optioneel: mount je model voor updates
