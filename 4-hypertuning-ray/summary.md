@@ -4,7 +4,7 @@ Hypertuning Fashion
 ## 1. Introduction
 In the hypertuning lessons, we focused on the concept of hypertuning. In the example, two parameters were tuned (hidden size and number of layers) on the gestures dataset.  
 This notebook was adapted to the Fashion dataset, where we use a CNN model to predict the 10 classes.  
-Two parameters were tuned: the **learning rate** and the **number of filters**.  
+Two parameters were tuned: the learning rate and the number of filters  
 Due to performance limitations of the SURF environment, the parameters were kept relatively small.
 
 ---
@@ -16,7 +16,7 @@ A higher number of filters leads to higher accuracy but also to longer training 
 ---
 
 ## 3. Experiment
-Experiments were conducted using four hypertuning methods (**random search**, **bayes**, **hyperband**, and **hyperopt**) for 10 epochs each.  See the 4-hypertuning_notebook.ipynb for the details.
+Experiments were conducted using four hypertuning methods random search bayes, hyperband, and hyperopt) for 10 epochs each.  See the 01_hypertuner_cnnn_v2-working.ipynb for the details.
 The configuration was the same for all hypertuners:
 - `"filters": tune.randint(2,16)`
 - `"units1": 128`
@@ -129,7 +129,7 @@ The configuration was the same for all hypertuners:
 | tune_model_3bb6886a | TERMINATED  | 192.168.3.171:221991 | 10 | 14 | 0.001470440 | /home/kkisteman_54e0 | 128 | 64 | 10 | 189.239 | 0.363981 | 0.314077 | 0.872796 |
 | tune_model_bfbf3411 | TERMINATED  | 192.168.3.171:223483 | 10 | 14 | 0.000739361 | /home/kkisteman_54e0 | 128 | 64 | 10 | 190.226 | 0.371764 | 0.346046 | 0.863582 |
 
-**End results:**
+End results:
 
 <img width="458" height="413" alt="plot_times" src="https://github.com/user-attachments/assets/dfa56dcf-e7fe-44be-8038-c8c1c63a9faf" />
 
@@ -145,8 +145,8 @@ The configuration was the same for all hypertuners:
 
 ## 4. Analysis / Reflection
 All hypertuning methods achieved roughly similar accuracies. This suggests that the different methods found similar hyperparameter combinations.  
-Among them, **Hyperopt** performed best.  
-In terms of training time, **Bayes** and **Random Search** took the longest, while **Hyperband** and **Hyperopt** were faster — which makes sense, since Hyperband stops early when a poor configuration is detected.
+Among them, Hyperopt performed best.  
+In terms of training time, Bayes and Random Search took the longest, while Hyperband and Hyperopt were faster — which makes sense, since Hyperband stops early when a poor configuration is detected.
 
 ### Hypothesis Check
 > A higher number of filters leads to higher accuracy but also to longer training times.
